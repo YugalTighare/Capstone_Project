@@ -1,0 +1,55 @@
+<div class="page-wrapper">
+
+  <!-- MENU SIDEBAR-->
+  <aside class="menu-sidebar d-none d-lg-block">
+    <div class="logo" style="background-color: white;">
+      <a routerLink="/products">
+        <img src="https://th.bing.com/th/id/R.365845069aa85efa92206045b7b5a546?rik=8Kp0AnnyUe1%2f8Q&riu=http%3a%2f%2fnatt-traningscenter.se%2fwp-content%2fuploads%2f2014%2f09%2ffoodbox_logo-300x127.png&ehk=DQ%2fc5mKVqaUYy6nhJL%2fs2uBHtrHvo1Ks6ukHPxTCaps%3d&risl=&pid=ImgRaw&r=0" alt="food box" class="img-responsive">
+      </a>
+    </div>
+
+    <app-product-category-menu></app-product-category-menu>
+
+  </aside>
+  <!-- END MENU SIDEBAR-->
+
+  <div class="page-container" style = "background-color:rgb(30, 128, 0);">
+    <!-- HEADER DESKTOP-->
+    <header class="header-desktop">
+      <div class="section-content section-content-p30">
+        <div class="container-fluid">
+          <div class="header-wrap">
+
+            <app-search></app-search>
+ 
+            <app-cart-status></app-cart-status>
+
+            <app-login-status></app-login-status>
+
+            
+
+          </div>
+          
+        </div>
+      </div>
+
+    </header>
+    <!-- END HEADER DESKTOP-->
+ 
+
+
+    <!-- MAIN CONTENT-->
+    <router-outlet></router-outlet>
+
+  </div>
+</div>
+
+<!-- ENDS PAGE CONTAINER -->
+
+<footer>
+  <ul>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Help</a></li>
+  </ul>
+</footer>
